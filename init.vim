@@ -16,7 +16,8 @@ let g:python2_host_prog = '/usr/bin/python3'
 
 call plug#begin()
     
-Plug 'searleser97/cpbooster'
+Plug 'searleser97/cpbooster.vim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -66,3 +67,11 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Compile C++ program with C++20
+autocmd FileType cpp nnoremap <F5> :w<CR>:!g++ -std=c++20 % -o %< && ./%<CR>
+
+" Add this line to your init.vim
+nnoremap <C-A-C> :normal! ggVG"+y<CR>
+
+
