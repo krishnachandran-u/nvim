@@ -18,6 +18,7 @@ call plug#begin()
     
 Plug 'searleser97/cpbooster.vim'
 Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -74,4 +75,5 @@ autocmd FileType cpp nnoremap <F5> :w<CR>:!g++ -std=c++20 % -o %< && ./%<CR>
 " Add this line to your init.vim
 nnoremap <C-A-C> :normal! ggVG"+y<CR>
 
+nmap <F6> :NERDTreeToggle<CR>
 
