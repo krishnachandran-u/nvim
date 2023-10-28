@@ -21,6 +21,12 @@ require("lazy").setup({
 	    build = "make install_jsregexp"
     },
     "honza/vim-snippets",
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
 })
 
 
