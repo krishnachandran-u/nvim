@@ -15,6 +15,7 @@ vim.o.autoindent = true
 
 -- Enable syntax highlighting
 vim.cmd('syntax on')
+vim.cmd('inoremap {<cr> {<cr>}<c-o>O')
 
 -- Set the shell environment for Neovim
 vim.env.BASH_ENV = "~/.vim_bash_env"
@@ -37,6 +38,6 @@ vim.api.nvim_exec([[
 vim.api.nvim_set_keymap('n', '<C-A-C>', [[:normal! ggVG"+y<CR>]], { noremap = true, silent = true })
 
 -- Toggle NERDTree with F6
-vim.api.nvim_set_keymap('n', '<F6>', ':NERDTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<F6>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 
