@@ -1,0 +1,63 @@
+/*
+    author: https://codeforces.com/profile/krishnachandran
+    text editor: NVIM v0.9.1
+    compiler: GNU G++20 11.2.0 (64 bit,  winlibs)
+*/
+
+#include <bits/stdc++.h>
+
+const char* BRIGHTYELLOW = "\033[1;93m";
+const char* RESETCOLOR = "\033[0m";
+
+#define dbg(x) std::cout << BRIGHTYELLOW << "\n" << #x << " " << x << RESETCOLOR << "\n";
+#define couts(x) cout << x << " "
+#define coutn(x) cout << x << "\n"
+#define add(a, b, mod) ((a % mod) + (b % mod)) % mod
+#define sub(a, b, mod) ((a % mod) - (b % mod)) % mod
+#define mul(a, b, mod) ((a % mod) * (b % mod)) % mod
+#define input_1d(a, n) for(ll i = 0; i < n; i++) std::cin >> a[i]
+#define input_2d(a, r, c) for(ll i = 0; i < r; i++) for(ll j = 0; j < c; j++) std::cin >> a[i][j]
+#define input_cn(a) for(auto &i: a) std::cin >> i
+#define output_1d(a, n) for(ll i = 0; i < n; i++) std::cout << a[i] << " "
+#define output_2d(a, r, c) for(ll i = 0; i < r; i++){for (ll j = 0; j < c; j++) std::cout << a[i][j] << " "; std::cout << "\n";}
+#define output_cn(a) for(auto &i: a) std::cout << i << " "
+#define sz(x) (x).size()
+#define fi first
+#define se second
+ 
+typedef long long int ll;
+typedef long double ld;
+ 
+const ll MAXN = 1e5 + 10;
+const ll MOD = 998244353;
+const long double PI = std::acos(-1.0);
+
+void solve(){	
+    ll n; std::cin >> n;
+    std::vector<ll> a(n + 1);
+    for(int i = 1; i <= n; i++){
+        std::cin >> a[i];
+    }
+    std::priority_queue<std::pair<ll, ll>> pq;
+    for(ll i = 2; i <= n; i++){
+        if(a[i - 1] > a[i]){
+            pq.push({a[i - 1] - a[i], i);
+        }
+    }
+    ll x = 1;
+    for(; x <= n && !pq.empty(); x++){
+        std::pair<ll, ll> p = pq.top(); 
+        pq.pop();
+        p.first = std::min(p.first, p.first - x);
+    }
+}
+
+void tst(bool test_cases){
+    int tst = 1; if(test_cases) std::cin >> tst; while(tst--) solve(); return;
+}
+
+int main(int argc, char *argv[]){
+    std::ios::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
+    tst(true);
+    return 0; 
+}

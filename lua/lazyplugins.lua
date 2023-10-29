@@ -20,7 +20,9 @@ require("lazy").setup({
 	    -- install jsregexp (optional!).
 	    build = "make install_jsregexp"
     },
+
     "honza/vim-snippets",
+
     {
         "folke/tokyonight.nvim",
         lazy = false,
@@ -38,6 +40,8 @@ require("lazy").setup({
         require("nvim-tree").setup {}
         end,
     },
+
+    "SirVer/ultisnips",
 })
 
 
