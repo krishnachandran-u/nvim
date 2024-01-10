@@ -40,4 +40,7 @@ vim.api.nvim_set_keymap('n', '<C-A-C>', [[:normal! ggVG"+y<CR>]], { noremap = tr
 -- Toggle NERDTree with F6
 vim.api.nvim_set_keymap('n', '<F6>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<C-o>', { noremap = true, silent = true })
+
+
 
