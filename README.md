@@ -24,8 +24,15 @@
 
     ```bash
     cd ~/.config &&
-    git clone -b main https://github.com/krishnachandran-u/neovim-config.git &&
-    rm -rf nvim &&
+    git clone -b main https://github.com/krishnachandran-u/neovim-config.git 
+    ```
+    Delete `nvim` directory if it exists:
+
+    ```bash
+    rm -rf nvim
+    ```
+    Rename directory `neovim-config` to `nvim`
+    ```bash
     mv neovim-config nvim
     ```
 
