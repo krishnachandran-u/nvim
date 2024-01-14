@@ -42,6 +42,11 @@ require("lazy").setup({
     },
 
     -- "SirVer/ultisnips",
+    "github/copilot.vim",
+    "pangloss/vim-javascript",
+    "elzr/vim-json",
+    "mxw/vim-jsx",
+    "mattn/emmet-vim",
 })
 
 

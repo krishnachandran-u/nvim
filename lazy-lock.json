@@ -1,10 +1,13 @@
 {
   "LuaSnip": { "branch": "master", "commit": "8ae1dedd988eb56441b7858bd1e8554dfadaa46d" },
+  "copilot.vim": { "branch": "release", "commit": "1a55183ef9347d6f420406a3746474b6b9fb9ef5" },
+  "emmet-vim": { "branch": "master", "commit": "def5d57a1ae5afb1b96ebe83c4652d1c03640f4d" },
   "feline.nvim": { "branch": "master", "commit": "3587f57480b88e8009df7b36dc84e9c7ff8f2c49" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "nvim-tree.lua": { "branch": "master", "commit": "f1b3e6a7eb92da492bd693257367d9256839ed3d" },
   "nvim-web-devicons": { "branch": "master", "commit": "db0c864375c198cacc171ff373e76bfce2a85045" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
-  "ultisnips": { "branch": "master", "commit": "b393ba65386d47664421e1f8b246a87a6e8b218c" },
-  "vim-snippets": { "branch": "master", "commit": "ba72b08e04e184ecd0a2a1b8012a81ddb040dbc3" }
+  "vim-javascript": { "branch": "master", "commit": "c470ce1399a544fe587eab950f571c83cccfbbdc" },
+  "vim-json": { "branch": "master", "commit": "3727f089410e23ae113be6222e8a08dd2613ecf2" },
+  "vim-jsx": { "branch": "master", "commit": "8879e0d9c5ba0e04ecbede1c89f63b7a0efa24af" }
 }
