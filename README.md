@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. **Install Neovim:** Ensure that Neovim version 0.8.0 or above is installed. It is recommended to compile Neovim from the source code.
+1. **Install [Neovim](https://github.com/neovim/neovim):** Ensure that Neovim version 0.8.0 or above is installed. It is recommended to [compile Neovim from the source code](https://github.com/neovim/neovim?tab=readme-ov-file#install-from-source).
 
     ```bash
     nvim --version
