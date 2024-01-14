@@ -31,7 +31,7 @@
     ```bash
     rm -rf nvim
     ```
-    Rename directory `neovim-config` to `nvim`
+    Rename directory `neovim-config` to `nvim`:
     ```bash
     mv neovim-config nvim
     ```
