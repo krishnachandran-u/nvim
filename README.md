@@ -46,7 +46,8 @@ To resolve this, edit the Lazy plugin configuration:
 ```bash
 nvim ~/.config/nvim/lua/lazyplugins.lua 
 ```
-delete or comment out the following lines:
+delete or [comment out](https://www.codecademy.com/resources/docs/lua/comments) the following lines:
+
 
 ```markdown
 "honza/vim-snippets",
