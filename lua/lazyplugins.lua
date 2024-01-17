@@ -21,7 +21,7 @@ require("lazy").setup({
 	    build = "make install_jsregexp"
     },
 
-    "honza/vim-snippets",
+    --"honza/vim-snippets",
 
     {
         "folke/tokyonight.nvim",
@@ -41,12 +41,13 @@ require("lazy").setup({
         end,
     },
 
-    "SirVer/ultisnips",
+    --"SirVer/ultisnips",
     "github/copilot.vim",
     "pangloss/vim-javascript",
     "elzr/vim-json",
     "mxw/vim-jsx",
     "mattn/emmet-vim",
+    'alvan/vim-closetag',
 })
 
 
