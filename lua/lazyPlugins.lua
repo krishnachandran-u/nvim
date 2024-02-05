@@ -48,6 +48,7 @@ require("lazy").setup({
     "mxw/vim-jsx",
     "mattn/emmet-vim",
     'alvan/vim-closetag',
+    'fatih/vim-go',
 })
 
 

@@ -1,9 +1,9 @@
-require "basiccommands"
-require "lazyplugins"
---require "packerplugins"
-require "colorscheme"
-require "nvimtree"
-require "ultisnips"
+require "basicCommands"
+require "lazyPlugins"
+--require "packerPlugins"
+require "colorScheme"
+require "nvimTree"
+require "ultiSnips"
 
 -- Enable true color support
 if vim.fn.has('termguicolors') == 1 then
