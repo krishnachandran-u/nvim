@@ -20,23 +20,20 @@
 
     If the version is greater than or equal to v0.9.4, you may encounter an issue with the tab key, as explained [here](#tab-not-working-in-insert-mode).
 
-    Clone the repository:
-
-    ```bash
-    cd ~/.config &&
-    git clone -b main https://github.com/krishnachandran-u/neovim-config.git 
-    ```
     Delete `nvim` directory if it exists:
 
     ```bash
     rm -rf nvim
     ```
-    Rename directory `neovim-config` to `nvim`:
+
+    Clone the repository:
+
     ```bash
-    mv neovim-config nvim
+    cd ~/.config &&
+    git clone -b main https://github.com/krishnachandran-u/nvim.git 
     ```
 
-4. **Run Neovim from Terminal:**
+5. **Run Neovim from Terminal:**
 
     ```bash
     nvim
