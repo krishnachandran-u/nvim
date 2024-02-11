@@ -41,7 +41,10 @@ vim.api.nvim_set_keymap('n', '<C-A-C>', [[:normal! ggVG"+y<CR>]], { noremap = tr
 vim.api.nvim_set_keymap('n', '<F6>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 -- Disable Copilot with F7
-vim.api.nvim_set_keymap('n', '<F7>', ':Copilot disable<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<F7>', ':Copilot disable<CR>', { noremap = true, silent = true })
+
+-- Map F7 to toggle Copilot
+vim.api.nvim_set_keymap('n', '<F7>', ':lua ToggleCopilot()<CR>', { noremap = true, silent = true })
 
 -- Generate closing tag in HTML
 vim.api.nvim_set_keymap('n', '<silent> <C-c>', '</<C-X><C-O><C-X>', { noremap = true, silent = true })
