@@ -46,5 +46,10 @@ vim.api.nvim_set_keymap('n', '<F7>', ':Copilot disable<CR>', { noremap = true, s
 -- Generate closing tag in HTML
 vim.api.nvim_set_keymap('n', '<silent> <C-c>', '</<C-X><C-O><C-X>', { noremap = true, silent = true })
 
+-- Map Tab key in visual mode to >gv
+vim.api.nvim_set_keymap('v', '<Tab>', '>gv', { noremap = true, silent = true })
+
+-- Map Shift+Tab key in visual mode to <gv
+vim.api.nvim_set_keymap('v', '<S-Tab>', '<gv', { noremap = true, silent = true })
 
 

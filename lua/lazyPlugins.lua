@@ -29,6 +29,7 @@ require("lazy").setup({
         priority = 1000,
         opts = {},
     },
+
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -49,6 +50,17 @@ require("lazy").setup({
     "mattn/emmet-vim",
     'alvan/vim-closetag',
     'fatih/vim-go',
+
+    --[[
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        -- Or branch = '0.1.x',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    ]]--
 })
 
 

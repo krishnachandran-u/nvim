@@ -4,6 +4,7 @@ require "lazyPlugins"
 require "colorScheme"
 require "nvimTree"
 require "ultiSnips"
+--require "telescope" checkhealth is not working
 
 -- Enable true color support
 if vim.fn.has('termguicolors') == 1 then
