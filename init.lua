@@ -1,10 +1,11 @@
-require "basicCommands"
-require "lazyPlugins"
+require "essentials"
+require "lazyplugins"
 --require "packerPlugins"
-require "colorScheme"
-require "nvimTree"
-require "ultiSnips"
+require "colorscheme"
+require "nvimtree"
+require "ultisnips"
 require "copilot"
+require "clipboard"
 --require "telescope" checkhealth is not working
 
 -- Enable true color support
