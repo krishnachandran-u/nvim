@@ -7,6 +7,8 @@ require "ultisnips"
 require "copilot"
 require "clipboard"
 require "toggletermconfig"
+--require "nvimcmp"
+
 --require "telescope" checkhealth is not working
 
 -- Enable true color support
