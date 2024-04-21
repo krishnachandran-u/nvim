@@ -7,7 +7,7 @@ require "ultisnips"
 require "copilot"
 require "clipboard"
 require "toggletermconfig"
-require "snip"
+require "snippets"
 --require "nvimcmp"
 
 --require "telescope" checkhealth is not working
