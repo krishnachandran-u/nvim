@@ -49,7 +49,7 @@ require("lazy").setup({
     "mxw/vim-jsx",
     "mattn/emmet-vim",
     'alvan/vim-closetag',
-    'fatih/vim-go',
+    -- 'fatih/vim-go',
     {
       {'akinsho/toggleterm.nvim', version = "*", config = true}
     },
