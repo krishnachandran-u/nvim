@@ -37,7 +37,7 @@
             "const long double PI = std::acos(-1.0);",
             "",
             "void solve(){",
-            "    ",
+            "\t$0",
             "}",
             "",
             "void tst(bool test_cases){",
@@ -51,5 +51,105 @@
             "}"
         ],
         "description": "Initialize Competitive Programming Template"
+    },
+    "Prime Sieve Algorithm": {
+        "prefix": "sieve",
+        "body": [
+            "int N = -1;",
+            "",
+            "std::vector<bool> is_prime(N+1, true);",
+            "",
+            "void sieve() {",
+            "\tis_prime[0] = is_prime[1] = false;",
+            "\t",
+            "\tfor (int i = 2; i <= N; i++) {",
+            "\t\tif (is_prime[i] && (long long)i * i <= N) {",
+            "\t\t\tfor (int j = i * i; j <= N; j += i)",
+            "\t\t\t\tis_prime[j] = false;",
+            "\t\t}",
+            "\t}",
+            "}"
+        ],
+        "description": "Generate a prime sieve algorithm"
+    },
+    "Binary Exponentiation": {
+        "prefix": "binexp",
+        "body": [
+            "long long binexp(long long a, long long b) {",
+            "\tlong long res = 1;",
+            "\twhile (b > 0) {",
+            "\t\tif (b & 1)",
+            "\t\t\tres = res * a;",
+            "\t\ta = a * a;",
+            "\t\tb >>= 1;",
+            "\t}",
+            "\treturn res;",
+            "}"
+        ],
+        "description": "Generate a binary exponentiation function"
+    },
+    "Modular Exponentiation": {
+        "prefix": "modexp",
+        "body": [
+            "long long modexp(long long a, long long b, long long m) {",
+            "\ta %= m;",
+            "\tlong long res = 1;",
+            "\twhile (b > 0) {",
+            "\t\tif (b & 1)",
+            "\t\t\tres = res * a % m;",
+            "\t\ta = a * a % m;",
+            "\t\tb >>= 1;",
+            "\t}",
+            "\treturn res;",
+            "}"
+        ],
+        "description": "Generate a modular exponentiation function"
+    },
+    "GCD (Greatest Common Divisor)": {
+        "prefix": "gcd",
+        "body": [
+            "ll gcd(long long a, long long b) {",
+            "\tif (b == 0) return a;",
+            "\treturn gcd(b, a % b);",
+            "}"
+        ],
+        "description": "Generate a function to compute the Greatest Common Divisor (GCD)"
+    },
+    "LCM (Least Common Multiple)": {
+        "prefix": "lcm",
+        "body": [
+            "ll gcd(long long a, long long b) {",
+            "\tif (b == 0) return a;",
+            "\treturn gcd(b, a % b);",
+            "}",
+            "",
+            "ll lcm(long long a, long long b) {",
+            "\treturn (a * b) / gcd(a, b);",
+            "}"
+        ],
+        "description": "Generate functions for computing GCD and LCM"
+    },
+    "Check Prime": {
+        "prefix": "isprime",
+        "body": [
+            "bool isprime(long long x) {",
+            "\tfor (long long i = 2; i * i <= x; i++) {",
+            "\t\tif (x % i == 0) {",
+            "\t\t\treturn false;",
+            "\t\t}",
+            "\t}",
+            "\treturn true;",
+            "}"
+        ],
+        "description": "Generate a function to check if a number is prime"
+    },
+    "Modular Function": {
+        "prefix": "modular",
+        "body": [
+            "ll md(long long x) {",
+            "\treturn x % mod;",
+            "}"
+        ],
+        "description": "Generate a function for modular operation"
     }
 }
