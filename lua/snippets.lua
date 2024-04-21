@@ -1,9 +1,14 @@
+require("luasnip.loaders.from_vscode").lazy_load()
+--require("luasnip.loaders.from_vscode").load({ paths = { "./snippets" } })
+
 local ls = require("luasnip")
 local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
 local extras = require("luasnip.extras")
 local rep = extras.rep
+local fmt = require("luasnip.extras.fmt").fmt
+local fmta = require("luasnip.extras.fmt").fmta
 
 vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
 vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump( 1) end, {silent = true})
@@ -21,3 +26,13 @@ ls.add_snippets("lua", {
     })
 })
 
+--[[
+ls.add_snippets("cpp", {
+    s("main", {
+        t('int main(int argc, char **argv) {'),
+        t('    $0'),
+        t('    return 0;'),
+        t('}')
+    })
+})
+]]--

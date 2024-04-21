@@ -18,7 +18,8 @@ require("lazy").setup({
 	    -- follow latest release.
 	    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 	    -- install jsregexp (optional!).
-	    build = "make install_jsregexp"
+	    build = "make install_jsregexp",
+        dependencies = { "rafamadriz/friendly-snippets" },
     },
 
     --"honza/vim-snippets",
@@ -123,6 +124,7 @@ require("lazy").setup({
     --For vsnip users
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
+    { "rafamadriz/friendly-snippets" }
 })
 
 
