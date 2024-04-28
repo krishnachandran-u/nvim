@@ -10,8 +10,11 @@ local rep = extras.rep
 local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
 
+--<C-k> to expand
 vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
+--<C-l> to jump forward
 vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump( 1) end, {silent = true})
+--<C-h> to jump backward
 vim.keymap.set({"i", "s"}, "<C-H>", function() ls.jump(-1) end, {silent = true})
 
 vim.keymap.set({"i", "s"}, "<C-E>", function()

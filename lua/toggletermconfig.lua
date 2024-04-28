@@ -37,3 +37,10 @@ end
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
+--Keymaps
+--<Esc><C-\> to toggle all terminals together
+--<Esc>1<C-\> to toggle terminal 1
+--<Esc>2<C-\> to toggle terminal 2
+--<C-w> to switch between terminals 
+--<C-w><C-h> to move to the terminal on the left
+--<C-w><C-l> to move to the terminal on the right
