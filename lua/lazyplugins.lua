@@ -114,7 +114,6 @@ require("lazy").setup({
     ]]--
 
     --for nvim-cmp
-    'neovim/nvim-lspconfig',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
@@ -124,7 +123,12 @@ require("lazy").setup({
     --For vsnip users
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
-    { "rafamadriz/friendly-snippets" }
+    { "rafamadriz/friendly-snippets" },
+    {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        'neovim/nvim-lspconfig',
+    }
 })
 
 
