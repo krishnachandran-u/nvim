@@ -9,6 +9,7 @@ require "clipboard"
 require "toggletermconfig"
 require "snippets"
 require "mason-lsp"
+require "completion"
 --require "nvimcmp"
 
 --require "telescope" checkhealth is not working
