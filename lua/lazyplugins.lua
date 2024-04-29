@@ -102,7 +102,6 @@ require("lazy").setup({
         },
       },
 
-    --[[
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',
@@ -111,7 +110,6 @@ require("lazy").setup({
     },
 
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-    ]]--
 
     --for nvim-cmp
     'hrsh7th/cmp-nvim-lsp',

@@ -12,7 +12,7 @@ require "mason-lsp"
 require "completion"
 --require "nvimcmp"
 
---require "telescope" checkhealth is not working
+require "telescope" --checkhealth is not working
 
 -- Enable true color support
 if vim.fn.has('termguicolors') == 1 then

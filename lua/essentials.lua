@@ -27,7 +27,7 @@ vim.g.python2_host_prog = '/usr/bin/python3'
 -- Additional Neovim-specific configurations
 --
 -- Set leader key to space
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 
 -- Compile C++ program with C++20
 vim.api.nvim_exec([[
