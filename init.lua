@@ -10,6 +10,7 @@ require "toggletermconfig"
 require "snippets"
 require "mason-lsp"
 require "completion"
+require "fold"
 --require "nvimcmp"
 
 require "telescope" --checkhealth is not working
